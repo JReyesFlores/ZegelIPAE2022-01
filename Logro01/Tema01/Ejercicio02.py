@@ -1,11 +1,18 @@
-# Se necesita un programa para evaluar los puntajes promedio de los estudiantes. El programa debe
-# pedir el nombre del estudiante, seguido de su puntaje único. Los nombres pueden ser ingresados
-# en cualquier orden. Ingresando un nombre vacío termina la entrada de los datos.
-# Luego se debe emitir una lista de todos los nombres, junto con el puntaje promedio evaluado
+# Se necesita un programa para evaluar los puntajes promedio de 
+# los estudiantes. El programa debe pedir el nombre del estudiante,
+# seguido de su puntaje único. Los nombres pueden ser ingresados en 
+# cualquier orden. Ingresando un nombre vacío termina la entrada 
+# de los datos. Luego se debe emitir una lista de todos los nombres,
+# junto con el puntaje promedio evaluado
 
+# Creo las variables que utilizaremos en la aplicación
 nombre_estudiante = 'Default'
 lista_estudiantes = []
 contador_estudiantes = 0
+
+# Itero mientras el valor de "nombre_estudiante" es diferente de vacío
+# Y dentro de la iteración solicito un nombre, y la nota.
+# Si todo es correcto lo almacena en la lista.
 while(nombre_estudiante.strip() != ''):
     nombre_estudiante = input('Ingrese el nombre del estudiante: ')
     if nombre_estudiante.strip() == '':
@@ -15,6 +22,7 @@ while(nombre_estudiante.strip() != ''):
     lista_estudiantes.append(
         {'nombre': nombre_estudiante, 'nota': nota_estudiante})
 
+# Itero la lista y sumo las notas de cada alumno
 suma = 0
 print('='*50)
 print('Lista de Estudiantes y notas')
@@ -24,6 +32,7 @@ for dic in lista_estudiantes:
     print(f'Nombre del estudiante: {dic["nombre"]} - Nota: {dic["nota"]}')
 print('='*50)
 
+# Muestro el promedio y cantidad de alumnos
 print(f'Promedio: {suma/contador_estudiantes}',
       f'Cantidad de estudiantes: {contador_estudiantes}', sep='\n')
 print('='*50)

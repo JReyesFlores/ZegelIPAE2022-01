@@ -1,4 +1,5 @@
-# Realizar un menú que tenga las siguientes opciones, para poder registrar datos de un padrón
+# Realizar un menú que tenga las siguientes opciones, para poder registrar
+# datos de un padrón
 # electoral.
 # Opción 1: Adicionar
 # Opción 2: Modificar
@@ -6,7 +7,8 @@
 # Opción 4: Consultar
 # Opción 5: Imprimir
 
-# Si al final da Enter continúa ingresando datos, caso contrario sale del menú. Solo usando funciones.
+# Si al final da Enter continúa ingresando datos, caso contrario sale del 
+# menú. Solo usando funciones.
 
 def patron_elec():  # UNA FUNCION PARA QUE SIRVA DE ENCABEZADO
     print("PATRON ELECTORAL")
