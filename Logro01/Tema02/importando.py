@@ -1,4 +1,4 @@
-# Importamos las funciones definidas en el archivo "operaciones"
+# Importamos las funciones definidas en el archivo "operaciones.py"
 # Podemos colocar un alias a la importación con "import {..nombre} as {..alias}"
 import operaciones as oper
 
@@ -7,6 +7,11 @@ oper.multiplicar(15, 4)
 
 # En esta sección solo importamos la función de sumar
 # Esto con la finalidad de poder usar dicha función sin hacer una referencia al módulo
-from operaciones import sumar
+# from operaciones import sumar
+# ==================================================================================================================
+
+# En este caso vamos a necesitar invocar cualquier función creada en el archivo "operaciones.py"
+# para ello importamos todo el contenido con el "*"
+from operaciones import *
 
 sumar(10, 15)
