@@ -1,3 +1,5 @@
+# Definimos nuestras funciones que utilizaremos en la importación
+
 def sumar(op1, op2):
     print(f'La suma es: {op1 + op2}'.upper())
 
